@@ -7,5 +7,6 @@ public class Main {
         String numCustomer = scan.nextLine();
         System.out.print("What's the tip percentage? (0-100): ");
         int percentage = scan.nextInt();
+        scan.nextLine();
     }
 }
