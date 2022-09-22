@@ -7,6 +7,8 @@ public class Main {
         int numCustomer = scan.nextInt();
         System.out.print("What's the tip percentage? (0-100): ");
         int percentage = scan.nextInt();
+
+
         //use while loop to get each cost
         int dish = 0;
         while(dish != numCustomer ) {
