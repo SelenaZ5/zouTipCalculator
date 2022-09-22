@@ -9,11 +9,15 @@ public class Main {
         int percentage = scan.nextInt();
 
         //use while loop to get each cost
+        //note: 1 customer can ask for more than one dish
         int dish = 0;
-        while(dish != numCustomer ) {
+        while(dish != -1 ) {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (-1) to end: ")
             dish++;
         }
+
+        System.out.println("-----------------------");
+        System.out.println("Tip Percentage ")
         scan.nextLine();
 
     }
