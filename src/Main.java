@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
+
 public class Main {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
@@ -10,14 +12,17 @@ public class Main {
 
         //use while loop to get each cost
         //note: 1 customer can ask for more than one dish
-        int dish = 0;
-        while(dish != -1 ) {
-            System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (-1) to end: ")
-            dish++;
+        int cost = 0;
+        while(cost != -1 ){
+            System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (-1) to end: ");
+            double num = scan.nextDouble();
+            DecimalFormat formatter = new DecimalFormat("#.##");
+            String formattedNum = formatter.format(num);
+
         }
 
         System.out.println("-----------------------");
-        System.out.println("Tip Percentage ")
+        System.out.println("Tip Percentage ");
         scan.nextLine();
 
     }
